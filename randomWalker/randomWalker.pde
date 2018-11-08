@@ -6,7 +6,12 @@ void setup(){
         w = new Walker();
         pixelDensity(2);
 }
+void keyPressed(){
+  if (key == 'a'){
+                w.step();
+                w.render();
+  }
+}
+
 void draw(){
-        w.step();
-        w.render();
 }

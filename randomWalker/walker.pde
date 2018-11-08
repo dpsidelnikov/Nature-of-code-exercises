@@ -1,11 +1,12 @@
 class Walker {
-int x,y,squareSide,colorValue;
+int x,y,squareSide;
+color colorValue;
 Walker() {
         // Starts at the center of canvas
         x = width/2;
         y = height/2;
         squareSide = 20;
-        colorValue = 64;
+        colorValue = color(20,125,200);
 }
 void render() {
         // Draws the point
@@ -30,14 +31,14 @@ void step() {
         // Random value triggers certain color tone
         int colorChoice = int(random(2));
         if (colorChoice == 0) {
-                colorValue += 20;
+                colorValue +=25;
         } else if (choice == 1) {
-                colorValue -= 20;
+                colorValue +=25;
         }
 
         // Avoid drawing outside the canvas
         x = constrain(x,0,width-1);
         y = constrain(y,0,height-1);
-        colorValue = constrain(colorValue,0,128);
+        colorValue = constrain(colorValue,color(0,0,0),color(255,255,255));
 }
 }
