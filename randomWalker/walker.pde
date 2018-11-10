@@ -6,7 +6,7 @@ Walker() {
         x = width/2;
         y = height/2;
         squareSide = 20;
-        colorValue = color(20,125,200);
+        colorValue = color(2,125,200);
 }
 void render() {
         // Draws the point
