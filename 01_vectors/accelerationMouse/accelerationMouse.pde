@@ -9,7 +9,6 @@ void setup() {
 }
 
 void draw() {
-
         m.move();
         m.display();
         // m.bounce();
