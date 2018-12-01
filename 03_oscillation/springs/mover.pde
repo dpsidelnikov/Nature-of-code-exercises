@@ -5,8 +5,8 @@ PVector velocity;
 PVector acceleration;
 float mass;
 
-Mover() {
-        location = new PVector(400,50);
+Mover(float value1,float value2) {
+        location = new PVector(value1,value2);
         velocity = new PVector(0,0);
         acceleration = new PVector(0,0);
         mass = 1;
