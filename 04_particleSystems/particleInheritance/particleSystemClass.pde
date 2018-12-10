@@ -11,12 +11,6 @@ ParticleSystem(int num, PVector v){
 
 }
 
-void applyForce(PVector force){
-        for (Particle p : particles) {
-                p.applyForce(force);
-        }
-}
-
 void run(){
         for (int i = particles.size()-1; i >= 0; i--) {
                 Particle p = particles.get(i);
@@ -29,7 +23,12 @@ void run(){
 
 }
 void addParticle() {
-        particles.add(new Particle(origin));
+        float r = random(1);
+        if (r < 0.4) {
+                particles.add(new SquareParticle(origin));
+        }else{
+                particles.add(new Particle(origin));
+        }
 }
 
 void addParticle(Particle p) {

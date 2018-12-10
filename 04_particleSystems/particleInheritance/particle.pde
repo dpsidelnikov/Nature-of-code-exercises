@@ -1,4 +1,3 @@
-
 class Particle {
 PVector location;
 PVector velocity;
@@ -11,9 +10,7 @@ Particle(PVector l) {
         location = l.get();
         lifespan = 255.0;
 }
-void applyForce(PVector force) {
-        acceleration.add(force);
-}
+
 void run() {
         update();
         display();
@@ -23,7 +20,6 @@ void run() {
 void update() {
         velocity.add(acceleration);
         location.add(velocity);
-        acceleration.mult(0);
         lifespan -= 2.0;
 }
 

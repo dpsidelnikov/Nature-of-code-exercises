@@ -1,8 +1,3 @@
-// Simple Particle System
-// Daniel Shiffman <http://www.shiffman.net>
-
-// A simple Particle class
-
 class Particle {
 PVector location;
 PVector velocity;
