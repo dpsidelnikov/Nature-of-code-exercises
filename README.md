@@ -1,2 +1,2 @@
-# natureOfCode
-Exercises from Daniel Shiffman's book
+# Nature of code Exercises
+Exercises from Daniel Shiffman's Processing book.
